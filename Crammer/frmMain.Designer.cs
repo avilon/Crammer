@@ -1,6 +1,6 @@
 ﻿namespace Crammer
 {
-    partial class frmMain
+    partial class MainForm
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,20 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pnlWorkArea = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // frmMain
+            // pnlWorkArea
+            // 
+            this.pnlWorkArea.Location = new System.Drawing.Point(145, 143);
+            this.pnlWorkArea.Name = "pnlWorkArea";
+            this.pnlWorkArea.Size = new System.Drawing.Size(200, 100);
+            this.pnlWorkArea.TabIndex = 0;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(419, 302);
-            this.Name = "frmMain";
+            this.Controls.Add(this.pnlWorkArea);
+            this.Name = "MainForm";
             this.Text = "Crammer";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel pnlWorkArea;
     }
 }
 

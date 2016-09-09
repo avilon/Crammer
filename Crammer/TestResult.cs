@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace Crammer
 {
-    class WordItem : IDictItem
+    public class TestResult : IDictItem
     {
         public void Read(XmlTextReader reader)
         {
@@ -18,7 +18,5 @@ namespace Crammer
         {
 
         }
-
-        private string _value;
     }
 }

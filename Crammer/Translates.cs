@@ -7,8 +7,16 @@ using System.Xml;
 
 namespace Crammer
 {
-    class WordItem : IDictItem
+    public class Translates : IDictItem
     {
+        public int Count 
+        { 
+            get 
+            { 
+                return _count; 
+            } 
+        }
+
         public void Read(XmlTextReader reader)
         {
 
@@ -19,6 +27,6 @@ namespace Crammer
 
         }
 
-        private string _value;
+        private int _count;
     }
 }

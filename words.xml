@@ -5,5 +5,15 @@
 				<transklate value="книга"/>
 			</translates>
 		</item>
+		<item caption="accept">
+			<translates>
+				<translate value="принимать"/>
+			</translates>
+		</item>
+		<item caption="ability">
+			<translates>
+				<translate value="способность"/>
+			</translates>
+		</item>
 	</items
 </dictionary>
