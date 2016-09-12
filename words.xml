@@ -5,6 +5,12 @@
 				<transklate value="книга"/>
 			</translates>
 		</item>
+		<item caption="mismatch">
+			<translates>
+				<transklate value="несоответствие"/>
+				<transklate value="несовпадение"/>
+			</translates>
+		</item>
 		<item caption="accept">
 			<translates>
 				<translate value="принимать"/>
@@ -15,5 +21,25 @@
 				<translate value="способность"/>
 			</translates>
 		</item>
-	</items
+		<item caption="response">
+			<translates>
+				<translate value="ответ"/>
+			</translates>
+		</item>
+		<item caption="flow">
+			<translates>
+				<translate value="поток"/>
+			</translates>
+		</item>
+		<item caption="property">
+			<translates>
+				<translate value="свойство"/>
+			</translates>
+		</item>
+		<item caption="request">
+			<translates>
+				<translate value="запрос"/>
+			</translates>
+		</item>
+	</items>
 </dictionary>

@@ -18,5 +18,9 @@ namespace Crammer
         {
 
         }
+
+        private string _name;
+        private int _tryCount;
+        private int _rightCount;
     }
 }

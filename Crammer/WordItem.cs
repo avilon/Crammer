@@ -7,11 +7,29 @@ using System.Xml;
 
 namespace Crammer
 {
-    class WordItem : IDictItem
+    public class WordItem : IDictItem
     {
+        public WordItem()
+        {
+            _translates = new Translates();
+        }
+
+        public string Value
+        {
+            get { return _value; }
+        }
+
         public void Read(XmlTextReader reader)
         {
-
+            do
+            {
+                if (reader.HasAttributes)
+                {
+                    _value = reader.GetAttribute("caption");
+                    _translates.Read(reader);
+                    break;
+                }
+            } while (reader.Read());
         }
 
         public void Write(XmlTextWriter writer)
@@ -20,5 +38,6 @@ namespace Crammer
         }
 
         private string _value;
+        private Translates _translates;
     }
 }

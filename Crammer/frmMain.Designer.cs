@@ -33,7 +33,7 @@
             // 
             // pnlWorkArea
             // 
-            this.pnlWorkArea.Location = new System.Drawing.Point(145, 143);
+            this.pnlWorkArea.Location = new System.Drawing.Point(167, 152);
             this.pnlWorkArea.Name = "pnlWorkArea";
             this.pnlWorkArea.Size = new System.Drawing.Size(200, 100);
             this.pnlWorkArea.TabIndex = 0;
@@ -46,6 +46,8 @@
             this.Controls.Add(this.pnlWorkArea);
             this.Name = "MainForm";
             this.Text = "Crammer";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -53,6 +55,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlWorkArea;
+
     }
 }
 
