@@ -36,6 +36,51 @@
 				<translate value="свойство"/>
 			</translates>
 		</item>
+		<item caption="event">
+			<translates>
+				<translate value="событие"/>
+			</translates>
+		</item>
+		<item caption="dust">
+			<translates>
+				<translate value="пыль"/>
+			</translates>
+		</item>
+		<item caption="sheet">
+			<translates>
+				<translate value="лист"/>
+			</translates>
+		</item>
+		<item caption="spoon">
+			<translates>
+				<translate value="ложка"/>
+			</translates>
+		</item>
+		<item caption="fork">
+			<translates>
+				<translate value="вилка"/>
+			</translates>
+		</item>
+		<item caption="saw">
+			<translates>
+				<translate value="пила"/>
+			</translates>
+		</item>
+		<item caption="hammer">
+			<translates>
+				<translate value="молоток"/>
+			</translates>
+		</item>
+		<item caption="nail">
+			<translates>
+				<translate value="гвоздь"/>
+			</translates>
+		</item>
+		<item caption="shovel">
+			<translates>
+				<translate value="лопата"/>
+			</translates>
+		</item>		
 		<item caption="request">
 			<translates>
 				<translate value="запрос"/>

@@ -21,7 +21,11 @@ namespace Crammer
             tlpAnswers.Dock = DockStyle.Fill;
             _answers = new Label[MAX_ANSWERS];
             for (int i = 0; i < MAX_ANSWERS; i++)
+            {
                 _answers[i] = new Label();
+                _answers[i].Dock = DockStyle.Fill;
+                _answers[i].TextAlign = ContentAlignment.MiddleCenter;
+            }
 
             tlpAnswers.Controls.Add(_answers[0]);
             tlpAnswers.Controls.Add(_answers[1]);
