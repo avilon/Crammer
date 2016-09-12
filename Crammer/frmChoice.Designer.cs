@@ -49,7 +49,6 @@
             this.splitContainer.Panel1.BackColor = System.Drawing.SystemColors.Info;
             this.splitContainer.Panel1.Controls.Add(this.lbTestWord);
             this.splitContainer.Panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.splitContainer.Panel1.Resize += new System.EventHandler(this.splitContainer_Panel1_Resize);
             // 
             // splitContainer.Panel2
             // 
@@ -73,6 +72,7 @@
             // 
             // tlpAnswers
             // 
+            this.tlpAnswers.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
             this.tlpAnswers.ColumnCount = 2;
             this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -83,6 +83,7 @@
             this.tlpAnswers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAnswers.Size = new System.Drawing.Size(200, 100);
             this.tlpAnswers.TabIndex = 0;
+            this.tlpAnswers.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tlpAnswers_MouseClick);
             // 
             // ChoiceForm
             // 

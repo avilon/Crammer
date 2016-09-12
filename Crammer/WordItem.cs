@@ -16,9 +16,16 @@ namespace Crammer
 
         public string Value
         {
-            get { return _value; }
+            get 
+            { 
+                return _value; 
+            }
         }
 
+        public Translates Translates
+        {
+            get { return _translates; }
+        }
         public void Read(XmlTextReader reader)
         {
             do

@@ -20,6 +20,14 @@ namespace Crammer
 
             tlpAnswers.Dock = DockStyle.Fill;
             _answers = new Label[MAX_ANSWERS];
+            for (int i = 0; i < MAX_ANSWERS; i++)
+                _answers[i] = new Label();
+
+            tlpAnswers.Controls.Add(_answers[0]);
+            tlpAnswers.Controls.Add(_answers[1]);
+            tlpAnswers.Controls.Add(_answers[2]);
+            tlpAnswers.Controls.Add(_answers[3]);
+
             FillAnswers();
         }
 
@@ -44,7 +52,21 @@ namespace Crammer
 
         private void FillAnswers()
         {
-
+            Random rnd = new Random();
+            int ndx = tlpAnswers.RowCount * tlpAnswers.ColumnCount;
+            HashSet<int> hset = new HashSet<int>();
+            while (hset.Count < ndx)
+            {
+                int n = rnd.Next(0, _dict.Count);
+                if (!hset.Contains(n))
+                {
+                    hset.Add(n);
+                }
+            }
+            for ( int i = 0; i < ndx; i++)
+            {
+                _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
+            }
         }
 
         Dict _dict;
@@ -52,11 +74,9 @@ namespace Crammer
 
         static readonly int MAX_ANSWERS = 9;
 
-        private void splitContainer_Panel1_Resize(object sender, EventArgs e)
+        private void tlpAnswers_MouseClick(object sender, MouseEventArgs e)
         {
-            //lbTestWord.Dock = DockStyle.Fill;
-            //lbTestWord.Invalidate();
-            //lbTestWord.Width = this.Width - 50;
+            //
         }
     }
 }
