@@ -93,6 +93,11 @@ namespace Crammer
             _choiceForm.Close();
         }
 
+        private void ShowTestForm()
+        {
+
+        }
+
         private void pnlWorkArea_Resize(object sender, EventArgs e)
         {
         }
