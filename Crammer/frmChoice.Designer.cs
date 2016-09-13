@@ -62,7 +62,7 @@
             this.lbTestWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbTestWord.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lbTestWord.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbTestWord.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTestWord.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbTestWord.Location = new System.Drawing.Point(10, 10);
             this.lbTestWord.Name = "lbTestWord";
             this.lbTestWord.Size = new System.Drawing.Size(327, 80);

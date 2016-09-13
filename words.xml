@@ -2,13 +2,13 @@
 	<items>
 		<item caption="book">
 			<translates>
-				<transklate value="книга"/>
+				<translate value="книга"/>
 			</translates>
 		</item>
 		<item caption="mismatch">
 			<translates>
-				<transklate value="несоответствие"/>
-				<transklate value="несовпадение"/>
+				<translate value="несоответствие"/>
+				<translate value="несовпадение"/>
 			</translates>
 		</item>
 		<item caption="accept">
@@ -81,6 +81,29 @@
 				<translate value="лопата"/>
 			</translates>
 		</item>		
+
+		<item caption="knife">
+			<translates>
+				<translate value="нож"/>
+			</translates>
+		</item>		
+		
+		<item caption="ceiling">
+			<translates>
+				<translate value="потолок"/>
+			</translates>
+		</item>		
+		<item caption="lesson">
+			<translates>
+				<translate value="урок"/>
+			</translates>
+		</item>		
+		<item caption="level">
+			<translates>
+				<translate value="уровень"/>
+			</translates>
+		</item>		
+		
 		<item caption="request">
 			<translates>
 				<translate value="запрос"/>

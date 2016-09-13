@@ -25,6 +25,7 @@ namespace Crammer
                 _answers[i] = new Label();
                 _answers[i].Dock = DockStyle.Fill;
                 _answers[i].TextAlign = ContentAlignment.MiddleCenter;
+                _answers[i].Font = new Font("Tahoma", 12);
             }
 
             tlpAnswers.Controls.Add(_answers[0]);
@@ -32,6 +33,8 @@ namespace Crammer
             tlpAnswers.Controls.Add(_answers[2]);
             tlpAnswers.Controls.Add(_answers[3]);
 
+            _dict.NextItem();
+            lbTestWord.Text = _dict.CurrentItem.Value;
             FillAnswers();
         }
 
@@ -42,9 +45,7 @@ namespace Crammer
 
         private void ChoiceForm_Load(object sender, EventArgs e)
         {
-            //this.splitContainer.SplitterDistance = 
-            //    Properties.Settings.Default.ChoiceForm_SplitDistance - 3*this.splitContainer.SplitterWidth;
-            lbTestWord.Text = _dict.GetItem("book").Value;
+            _dict.NextItem();
         }
 
         private void ChoiceForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -57,19 +58,24 @@ namespace Crammer
         private void FillAnswers()
         {
             Random rnd = new Random();
-            int ndx = tlpAnswers.RowCount * tlpAnswers.ColumnCount;
+            int ndx = 4;
+            int pos = rnd.Next(4);
             HashSet<int> hset = new HashSet<int>();
             while (hset.Count < ndx)
             {
                 int n = rnd.Next(0, _dict.Count);
                 if (!hset.Contains(n))
                 {
-                    hset.Add(n);
+                    if (_dict.GetItem(n).Value != _dict.CurrentItem.Value)
+                        hset.Add(n);
                 }
             }
             for ( int i = 0; i < ndx; i++)
             {
-                _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
+                if (i == pos)
+                    _answers[i].Text = _dict.GetCurrentTranslate();
+                else
+                    _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
             }
         }
 
