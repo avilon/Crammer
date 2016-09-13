@@ -84,6 +84,7 @@
             this.tlpAnswers.Size = new System.Drawing.Size(200, 100);
             this.tlpAnswers.TabIndex = 0;
             this.tlpAnswers.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tlpAnswers_MouseClick);
+            this.tlpAnswers.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tlpAnswers_MouseDoubleClick);
             // 
             // ChoiceForm
             // 
