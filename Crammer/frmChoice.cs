@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Crammer
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class ChoiceForm : Form
     {
         public ChoiceForm()
@@ -27,6 +30,7 @@ namespace Crammer
                 _answers[i].TextAlign = ContentAlignment.MiddleCenter;
                 _answers[i].Font = new Font("Tahoma", 12);
                 _answers[i].SendToBack();
+                _answers[i].MouseClick += new System.Windows.Forms.MouseEventHandler(this.AnswerLabelMouseClick);
             }
 
             tlpAnswers.Controls.Add(_answers[0]);
@@ -35,9 +39,7 @@ namespace Crammer
             tlpAnswers.Controls.Add(_answers[3]);
             tlpAnswers.BringToFront();
 
-            _dict.NextItem();
-            lbTestWord.Text = _dict.CurrentItem.Value;
-            FillAnswers();
+            ShowNextItem();
         }
 
         private void LoadDict()
@@ -61,7 +63,7 @@ namespace Crammer
         {
             Random rnd = new Random();
             int ndx = 4;
-            int pos = rnd.Next(4);
+            _pos = rnd.Next(4);
             HashSet<int> hset = new HashSet<int>();
             while (hset.Count < ndx)
             {
@@ -74,45 +76,35 @@ namespace Crammer
             }
             for (int i = 0; i < ndx; i++)
             {
-                if (i == pos)
+                if (i == _pos)
                     _answers[i].Text = _dict.GetCurrentTranslate();
                 else
                     _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
             }
         }
 
-        Dict _dict;
-        Label[] _answers;
+        private void ShowNextItem()
+        {
+            _dict.NextItem();
+            lbTestWord.Text = _dict.CurrentItem.Value;
+            FillAnswers();
+        }
+
+        private Dict _dict;
+        private Label[] _answers;
+        private int _pos;
 
         static readonly int MAX_ANSWERS = 9;
 
-        private void tlpAnswers_MouseClick(object sender, MouseEventArgs e)
+        private void AnswerLabelMouseClick(object sender, MouseEventArgs e)
         {
-            int row = 0;
-            int verticalOffset = 0;
-            foreach (int h in tlpAnswers.GetRowHeights())
+            int ndx = (sender as AnswerLabel).Index;
+            if (ndx != _pos)
             {
-                int column = 0;
-                int horizontalOffset = 0;
-                foreach (int w in tlpAnswers.GetColumnWidths())
-                {
-                    Rectangle rectangle = new Rectangle(horizontalOffset, verticalOffset, w, h);
-                    if (rectangle.Contains(e.Location))
-                    {
-                        MessageBox.Show(String.Format("row {0}, column {1} was clicked", row, column), "aa");
-                        return;
-                    }
-                    horizontalOffset += w;
-                    column++;
-                }
-                verticalOffset += h;
-                row++;
+                MessageBox.Show("Ошибка, попробуйте еще раз", "Crammer");
+                return;
             }
-        }
-
-        private void tlpAnswers_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            MessageBox.Show("Mouse double click", "aa");
+            ShowNextItem();
         }
     }
 }

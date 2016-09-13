@@ -59,7 +59,6 @@
             // 
             // lbTestWord
             // 
-            this.lbTestWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbTestWord.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lbTestWord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTestWord.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -83,8 +82,6 @@
             this.tlpAnswers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAnswers.Size = new System.Drawing.Size(200, 100);
             this.tlpAnswers.TabIndex = 0;
-            this.tlpAnswers.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tlpAnswers_MouseClick);
-            this.tlpAnswers.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tlpAnswers_MouseDoubleClick);
             // 
             // ChoiceForm
             // 

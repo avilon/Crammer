@@ -9,7 +9,7 @@ namespace Crammer
 {
     class Translate : IDictItem
     {
-        public string value 
+        public string Value 
         { 
             get 
             { 
@@ -19,7 +19,7 @@ namespace Crammer
         
         public void Read(XmlTextReader reader)
         {
-
+            _value = "";
         }
 
         public void Write(XmlTextWriter writer)
