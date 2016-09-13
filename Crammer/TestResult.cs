@@ -13,7 +13,7 @@ namespace Crammer
         {
             _tryCount = 0;
             _success = 0;
-            _mistake = 0;
+            _misses = 0;
             _name = "Default";
         }
 
@@ -33,17 +33,23 @@ namespace Crammer
             }
         }
 
-        public int Mistake
+        public int Misses
         {
             get
             {
-                return _mistake;
+                return _misses;
             }
         }
 
         public void Read(XmlTextReader reader)
         {
-
+            if (reader.HasAttributes)
+            {
+                _name = reader.GetAttribute("name");
+                _tryCount = int.Parse(reader.GetAttribute("total"));
+                _success = int.Parse(reader.GetAttribute("success"));
+                _misses = int.Parse(reader.GetAttribute("misses"));
+            }
         }
 
         public void Write(XmlTextWriter writer)
@@ -54,6 +60,6 @@ namespace Crammer
         private string _name;
         private int _tryCount;
         private int _success;
-        private int _mistake;
+        private int _misses;
     }
 }

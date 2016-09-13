@@ -12,7 +12,7 @@ namespace Crammer
         public WordItem()
         {
             _translates = new Translates();
-            _testResult = new TestResult();
+            _testResults = new List<TestResult>();
         }
 
         public string Value
@@ -41,12 +41,33 @@ namespace Crammer
         {
             do
             {
-                if (reader.HasAttributes)
+                if (reader.NodeType == XmlNodeType.Element)
                 {
-                    _value = reader.GetAttribute("caption");
-                    _translates.Read(reader);
-                    break;
+                    if (reader.Name == "item")
+                    {
+                        if (reader.HasAttributes)
+                        {
+                            _value = reader.GetAttribute("caption");
+                            _translates.Read(reader);
+                        }
+                    }
+                    else if (reader.Name == "tests")
+                    {
+                        ReadTestStatistic(reader);
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
+                else if (reader.NodeType == XmlNodeType.EndElement)
+                {
+                    if (reader.Name == "item")
+                    {
+                        break;
+                    }
+                }
+
             } while (reader.Read());
         }
 
@@ -55,8 +76,31 @@ namespace Crammer
 
         }
 
+        private void ReadTestStatistic(XmlTextReader reader)
+        {
+            while (reader.Read())
+            {
+                if (reader.NodeType == XmlNodeType.Element)
+                {
+                    if (reader.Name == "test")
+                    {
+                        TestResult tr = new TestResult();
+                        tr.Read(reader);
+                        _testResults.Add(tr);
+                    }
+                }
+                if (reader.NodeType == XmlNodeType.EndElement)
+                {
+                    if (reader.Name == "tests")
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+
         private string _value;
         private Translates _translates;
-        private TestResult _testResult;
+        private List<TestResult> _testResults;
     }
 }
