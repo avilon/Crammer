@@ -21,15 +21,19 @@ namespace Crammer
 
         private void ShowChoiceForm()
         {
-            _choiceForm = new ChoiceForm();
-            _choiceForm.TopLevel = false;
-            _choiceForm.AutoScroll = false;
-            _choiceForm.FormBorderStyle = FormBorderStyle.None;
-            _choiceForm.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
-            pnlWorkArea.Controls.Add(_choiceForm);            
-            _choiceForm.Dock = DockStyle.Fill;
+            if (_choiceForm == null)
+            {
+                _choiceForm = new ChoiceForm();
+                _choiceForm.TopLevel = false;
+                _choiceForm.AutoScroll = false;
+                _choiceForm.FormBorderStyle = FormBorderStyle.None;
+                _choiceForm.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
+                pnlWorkArea.Controls.Add(_choiceForm);
+                _choiceForm.Dock = DockStyle.Fill;
+            }
 
             _choiceForm.Show();
+            _choiceForm.BringToFront();
             tsslFirst.Text = String.Format("Кол-во слов в базе: {0}",  _choiceForm.GetItemCount().ToString());
         }
 
@@ -50,8 +54,25 @@ namespace Crammer
             _editForm.BringToFront();
         }
 
+        private void ShowPrintForm()
+        {
+            if (_printForm == null)
+            {
+                _printForm = new PrintForm();
+                _printForm.TopLevel = false;
+                _printForm.AutoScroll = false;
+                _printForm.FormBorderStyle = FormBorderStyle.None;
+                _printForm.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
+                pnlWorkArea.Controls.Add(_printForm);
+                _printForm.Dock = DockStyle.Fill;
+            }
+            _printForm.Show();
+            _printForm.BringToFront();
+        }
+
         private ChoiceForm _choiceForm;
         private EditForm _editForm;
+        private PrintForm _printForm;
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -84,6 +105,16 @@ namespace Crammer
         private void mmFileEdit_Click(object sender, EventArgs e)
         {
             ShowEditForm();
+        }
+
+        private void mmTestChoice_Click(object sender, EventArgs e)
+        {
+            ShowChoiceForm();
+        }
+
+        private void mmTestPrint_Click(object sender, EventArgs e)
+        {
+            ShowPrintForm();
         }
     }
 }

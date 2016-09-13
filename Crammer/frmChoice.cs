@@ -22,23 +22,14 @@ namespace Crammer
             LoadDict();
 
             tlpAnswers.Dock = DockStyle.Fill;
-            _answers = new Label[MAX_ANSWERS];
-            for (int i = 0; i < MAX_ANSWERS; i++)
-            {
-                _answers[i] = new AnswerLabel(i);
-                _answers[i].Dock = DockStyle.Fill;
-                _answers[i].TextAlign = ContentAlignment.MiddleCenter;
-                _answers[i].Font = new Font("Tahoma", 12);
-                _answers[i].SendToBack();
-                _answers[i].MouseClick += new System.Windows.Forms.MouseEventHandler(this.AnswerLabelMouseClick);
-            }
+            
+            CreateAnswersLabels();
 
-            tlpAnswers.Controls.Add(_answers[0]);
-            tlpAnswers.Controls.Add(_answers[1]);
-            tlpAnswers.Controls.Add(_answers[2]);
-            tlpAnswers.Controls.Add(_answers[3]);
-            tlpAnswers.Controls.Add(_answers[4]);
-            tlpAnswers.Controls.Add(_answers[5]);
+            int ndxCount = tlpAnswers.ColumnCount * tlpAnswers.RowCount;
+            for (int i = 0; i < ndxCount; i++ )
+            {
+                tlpAnswers.Controls.Add(_answers[i]);
+            }
 
             tlpAnswers.BringToFront();
 
@@ -71,7 +62,7 @@ namespace Crammer
         {
             Random rnd = new Random();
             int ndx = 6;
-            _pos = rnd.Next(6);
+            _pos = rnd.Next(ndx);
             HashSet<int> hset = new HashSet<int>();
             while (hset.Count < ndx)
             {
@@ -90,6 +81,8 @@ namespace Crammer
                 else
                     _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
             }
+
+            ResetAnswerLabels();
         }
 
         private void ShowNextItem()
@@ -99,21 +92,44 @@ namespace Crammer
             FillAnswers();
         }
 
-        private Dict _dict;
-        private Label[] _answers;
-        private int _pos;
-
-        static readonly int MAX_ANSWERS = 9;
-
         private void AnswerLabelMouseClick(object sender, MouseEventArgs e)
         {
             int ndx = (sender as AnswerLabel).Index;
             if (ndx != _pos)
             {
                 MessageBox.Show("Ошибка, попробуйте еще раз", "Crammer");
+                _answers[ndx].BackColor = Color.DarkOrange;
                 return;
             }
             ShowNextItem();
         }
+
+        private void CreateAnswersLabels()
+        {
+            _answers = new Label[MAX_ANSWERS];
+            for (int i = 0; i < MAX_ANSWERS; i++)
+            {
+                _answers[i] = new AnswerLabel(i);
+                _answers[i].Dock = DockStyle.Fill;
+                _answers[i].TextAlign = ContentAlignment.MiddleCenter;
+                _answers[i].Font = new Font("Tahoma", 12);
+                _answers[i].SendToBack();
+                _answers[i].MouseClick += new System.Windows.Forms.MouseEventHandler(this.AnswerLabelMouseClick);
+            }
+        }
+
+        private void ResetAnswerLabels()
+        {
+            for (int i = 0; i < MAX_ANSWERS; i++)
+            {
+                _answers[i].BackColor = SystemColors.ButtonFace;
+            }
+        }
+
+        private Dict _dict;
+        private Label[] _answers;
+        private int _pos;
+
+        static readonly int MAX_ANSWERS = 9;
     }
 }

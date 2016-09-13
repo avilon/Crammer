@@ -9,6 +9,38 @@ namespace Crammer
 {
     public class TestResult : IDictItem
     {
+        public TestResult()
+        {
+            _tryCount = 0;
+            _success = 0;
+            _mistake = 0;
+            _name = "Default";
+        }
+
+        public int TryCount
+        {
+            get
+            {
+                return _tryCount;
+            }
+        }
+
+        public int Success
+        {
+            get
+            {
+                return _success;
+            }
+        }
+
+        public int Mistake
+        {
+            get
+            {
+                return _mistake;
+            }
+        }
+
         public void Read(XmlTextReader reader)
         {
 
@@ -21,6 +53,7 @@ namespace Crammer
 
         private string _name;
         private int _tryCount;
-        private int _rightCount;
+        private int _success;
+        private int _mistake;
     }
 }

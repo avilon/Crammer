@@ -81,13 +81,11 @@
 				<translate value="лопата"/>
 			</translates>
 		</item>		
-
 		<item caption="knife">
 			<translates>
 				<translate value="нож"/>
 			</translates>
-		</item>		
-		
+		</item>			
 		<item caption="ceiling">
 			<translates>
 				<translate value="потолок"/>
@@ -102,8 +100,122 @@
 			<translates>
 				<translate value="уровень"/>
 			</translates>
-		</item>		
-		
+		</item>				
+		<item caption="dive">
+			<translates>
+				<translate value="погружение"/>
+			</translates>
+		</item>				
+		<item caption="mean">
+			<translates>
+				<translate value="означать"/>
+			</translates>
+		</item>						
+		<item caption="consist">
+			<translates>
+				<translate value="состоит"/>
+			</translates>
+		</item>				
+		<item caption="avoid">
+			<translates>
+				<translate value="избегать"/>
+			</translates>
+		</item>				
+		<item caption="allow">
+			<translates>
+				<translate value="позволять"/>
+			</translates>
+		</item>				
+
+		<item caption="namely">
+			<translates>
+				<translate value="а именно"/>
+				<translate value="в частности"/>
+			</translates>
+		</item>				
+		<item caption="probably">
+			<translates>
+				<translate value="вероятно"/>
+			</translates>
+		</item>
+		<item caption="deal">
+			<translates>
+				<translate value="сделка"/>
+			</translates>
+		</item>
+		<item caption="goal">
+			<translates>
+				<translate value="цель"/>
+			</translates>
+		</item>
+		<item caption="certain">
+			<translates>
+				<translate value="определенный"/>
+			</translates>
+		</item>
+		<item caption="possible">
+			<translates>
+				<translate value="возможный"/>
+			</translates>
+		</item>
+		<item caption="order">
+			<translates>
+				<translate value="заказ"/>
+			</translates>
+		</item>
+		<item caption="adjust">
+			<translates>
+				<translate value="регулировать"/>
+			</translates>
+		</item>
+		<item caption="overtake">
+			<translates>
+				<translate value="перегнать"/>
+			</translates>
+		</item>
+		<item caption="roadside">
+			<translates>
+				<translate value="обочина"/>
+			</translates>
+		</item>
+		<item caption="necessary">
+			<translates>
+				<translate value="необходимый"/>
+			</translates>
+		</item>
+		<item caption="essential">
+			<translates>
+				<translate value="необходимый"/>
+				<translate value="обязательный"/>
+			</translates>
+		</item>
+		<item caption="truth">
+			<translates>
+				<translate value="истина"/>
+				<translate value="правда"/>
+			</translates>
+		</item>
+		<item caption="behavior">
+			<translates>
+				<translate value="поведение"/>
+			</translates>
+		</item>
+		<item caption="exact">
+			<translates>
+				<translate value="точный"/>
+			</translates>
+		</item>
+		<item caption="above">
+			<translates>
+				<translate value="выше"/>
+			</translates>
+		</item>
+		<item caption="explore">
+			<translates>
+				<translate value="изучать"/>
+			</translates>
+		</item>
+
 		<item caption="request">
 			<translates>
 				<translate value="запрос"/>

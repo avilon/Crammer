@@ -38,6 +38,9 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mmExit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsslFirst = new System.Windows.Forms.ToolStripStatusLabel();
+            this.тестToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mmTestChoice = new System.Windows.Forms.ToolStripMenuItem();
+            this.mmTestPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +65,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
+            this.файлToolStripMenuItem,
+            this.тестToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(419, 24);
@@ -118,6 +122,29 @@
             this.tsslFirst.Size = new System.Drawing.Size(118, 17);
             this.tsslFirst.Text = "toolStripStatusLabel1";
             // 
+            // тестToolStripMenuItem
+            // 
+            this.тестToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mmTestChoice,
+            this.mmTestPrint});
+            this.тестToolStripMenuItem.Name = "тестToolStripMenuItem";
+            this.тестToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.тестToolStripMenuItem.Text = "Тест";
+            // 
+            // mmTestChoice
+            // 
+            this.mmTestChoice.Name = "mmTestChoice";
+            this.mmTestChoice.Size = new System.Drawing.Size(155, 22);
+            this.mmTestChoice.Text = "Угадайка";
+            this.mmTestChoice.Click += new System.EventHandler(this.mmTestChoice_Click);
+            // 
+            // mmTestPrint
+            // 
+            this.mmTestPrint.Name = "mmTestPrint";
+            this.mmTestPrint.Size = new System.Drawing.Size(155, 22);
+            this.mmTestPrint.Text = "Правописание";
+            this.mmTestPrint.Click += new System.EventHandler(this.mmTestPrint_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +178,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mmExit;
         private System.Windows.Forms.ToolStripStatusLabel tsslFirst;
+        private System.Windows.Forms.ToolStripMenuItem тестToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mmTestChoice;
+        private System.Windows.Forms.ToolStripMenuItem mmTestPrint;
 
     }
 }

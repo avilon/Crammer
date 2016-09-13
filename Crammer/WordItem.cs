@@ -12,6 +12,7 @@ namespace Crammer
         public WordItem()
         {
             _translates = new Translates();
+            _testResult = new TestResult();
         }
 
         public string Value
@@ -26,6 +27,16 @@ namespace Crammer
         {
             get { return _translates; }
         }
+
+        public void TrySuccess()
+        {
+        }
+
+        public void TryMistake()
+        {
+
+        }
+
         public void Read(XmlTextReader reader)
         {
             do
