@@ -72,15 +72,16 @@
             // tlpAnswers
             // 
             this.tlpAnswers.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tlpAnswers.ColumnCount = 2;
-            this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpAnswers.ColumnCount = 3;
+            this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpAnswers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpAnswers.Location = new System.Drawing.Point(57, 44);
             this.tlpAnswers.Name = "tlpAnswers";
             this.tlpAnswers.RowCount = 2;
             this.tlpAnswers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAnswers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpAnswers.Size = new System.Drawing.Size(200, 100);
+            this.tlpAnswers.Size = new System.Drawing.Size(247, 100);
             this.tlpAnswers.TabIndex = 0;
             // 
             // ChoiceForm

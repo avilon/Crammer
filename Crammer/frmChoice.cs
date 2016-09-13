@@ -37,9 +37,17 @@ namespace Crammer
             tlpAnswers.Controls.Add(_answers[1]);
             tlpAnswers.Controls.Add(_answers[2]);
             tlpAnswers.Controls.Add(_answers[3]);
+            tlpAnswers.Controls.Add(_answers[4]);
+            tlpAnswers.Controls.Add(_answers[5]);
+
             tlpAnswers.BringToFront();
 
             ShowNextItem();
+        }
+
+        public int GetItemCount()
+        {
+            return _dict.Count;
         }
 
         private void LoadDict()
@@ -62,8 +70,8 @@ namespace Crammer
         private void FillAnswers()
         {
             Random rnd = new Random();
-            int ndx = 4;
-            _pos = rnd.Next(4);
+            int ndx = 6;
+            _pos = rnd.Next(6);
             HashSet<int> hset = new HashSet<int>();
             while (hset.Count < ndx)
             {
@@ -74,6 +82,7 @@ namespace Crammer
                         hset.Add(n);
                 }
             }
+
             for (int i = 0; i < ndx; i++)
             {
                 if (i == _pos)

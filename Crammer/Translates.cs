@@ -51,6 +51,9 @@ namespace Crammer
                         break;
                     }
                 }
+
+                if (reader.NodeType == XmlNodeType.EndElement)
+                    break;
             }
         }
 

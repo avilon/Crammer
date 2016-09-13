@@ -46,5 +46,6 @@ namespace Crammer
 
         private string _value;
         private Translates _translates;
+        private TestResult _testResult;
     }
 }

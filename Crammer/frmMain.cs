@@ -30,9 +30,28 @@ namespace Crammer
             _choiceForm.Dock = DockStyle.Fill;
 
             _choiceForm.Show();
+            tsslFirst.Text = String.Format("Кол-во слов в базе: {0}",  _choiceForm.GetItemCount().ToString());
+        }
+
+        private void ShowEditForm()
+        {
+            if (_editForm == null)
+            {
+                _editForm = new EditForm();
+                _editForm.TopLevel = false;
+                _editForm.AutoScroll = false;
+                _editForm.FormBorderStyle = FormBorderStyle.None;
+                _editForm.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Top;
+                pnlWorkArea.Controls.Add(_editForm);
+                _editForm.Dock = DockStyle.Fill;
+            }
+
+            _editForm.Show();
+            _editForm.BringToFront();
         }
 
         private ChoiceForm _choiceForm;
+        private EditForm _editForm;
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -55,6 +74,16 @@ namespace Crammer
 
         private void pnlWorkArea_Resize(object sender, EventArgs e)
         {
+        }
+
+        private void mmExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void mmFileEdit_Click(object sender, EventArgs e)
+        {
+            ShowEditForm();
         }
     }
 }

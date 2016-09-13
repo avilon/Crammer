@@ -29,11 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlWorkArea = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.новыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mmFileNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.mmFileOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.mmFileEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mmExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsslFirst = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,13 +49,15 @@
             this.pnlWorkArea.Size = new System.Drawing.Size(200, 100);
             this.pnlWorkArea.TabIndex = 0;
             // 
-            // statusStrip1
+            // statusStrip
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 280);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(419, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip";
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslFirst});
+            this.statusStrip.Location = new System.Drawing.Point(0, 280);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(419, 22);
+            this.statusStrip.TabIndex = 1;
+            this.statusStrip.Text = "statusStrip";
             // 
             // menuStrip1
             // 
@@ -65,23 +72,51 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.новыйToolStripMenuItem,
-            this.открытьToolStripMenuItem});
+            this.mmFileNew,
+            this.mmFileOpen,
+            this.mmFileEdit,
+            this.toolStripMenuItem1,
+            this.mmExit});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
-            // новыйToolStripMenuItem
+            // mmFileNew
             // 
-            this.новыйToolStripMenuItem.Name = "новыйToolStripMenuItem";
-            this.новыйToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.новыйToolStripMenuItem.Text = "Новый";
+            this.mmFileNew.Name = "mmFileNew";
+            this.mmFileNew.Size = new System.Drawing.Size(160, 22);
+            this.mmFileNew.Text = "Новый";
             // 
-            // открытьToolStripMenuItem
+            // mmFileOpen
             // 
-            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.открытьToolStripMenuItem.Text = "Открыть...";
+            this.mmFileOpen.Name = "mmFileOpen";
+            this.mmFileOpen.Size = new System.Drawing.Size(160, 22);
+            this.mmFileOpen.Text = "Открыть...";
+            // 
+            // mmFileEdit
+            // 
+            this.mmFileEdit.Name = "mmFileEdit";
+            this.mmFileEdit.Size = new System.Drawing.Size(160, 22);
+            this.mmFileEdit.Text = "Редактировать..";
+            this.mmFileEdit.Click += new System.EventHandler(this.mmFileEdit_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(157, 6);
+            // 
+            // mmExit
+            // 
+            this.mmExit.Name = "mmExit";
+            this.mmExit.Size = new System.Drawing.Size(160, 22);
+            this.mmExit.Text = "Выход";
+            this.mmExit.Click += new System.EventHandler(this.mmExit_Click);
+            // 
+            // tsslFirst
+            // 
+            this.tsslFirst.Name = "tsslFirst";
+            this.tsslFirst.Size = new System.Drawing.Size(118, 17);
+            this.tsslFirst.Text = "toolStripStatusLabel1";
             // 
             // MainForm
             // 
@@ -89,12 +124,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(419, 302);
             this.Controls.Add(this.pnlWorkArea);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MainForm";
             this.Text = "Crammer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -105,11 +142,15 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlWorkArea;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem новыйToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mmFileNew;
+        private System.Windows.Forms.ToolStripMenuItem mmFileOpen;
+        private System.Windows.Forms.ToolStripMenuItem mmFileEdit;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mmExit;
+        private System.Windows.Forms.ToolStripStatusLabel tsslFirst;
 
     }
 }
