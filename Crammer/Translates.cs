@@ -31,6 +31,19 @@ namespace Crammer
             }
         }
 
+        public string ToString()
+        {
+            string result = "";
+
+            foreach (string s in _items)
+            {
+                if (!String.IsNullOrEmpty(result))
+                    result = result + ", ";
+                result = result + s;
+            }
+
+            return result;
+        }
         public void Read(XmlTextReader reader)
         {
             while (reader.Read())

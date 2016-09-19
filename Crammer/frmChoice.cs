@@ -18,6 +18,7 @@ namespace Crammer
         public ChoiceForm()
         {
             InitializeComponent();
+            _choiceDir = 0;
             _dict = new Dict();
             LoadDict();
 
@@ -77,9 +78,19 @@ namespace Crammer
             for (int i = 0; i < ndx; i++)
             {
                 if (i == _pos)
-                    _answers[i].Text = _dict.GetCurrentTranslate();
+                {
+                    if (_choiceDir != 0)
+                        _answers[i].Text = _dict.GetCurrentTranslate();
+                    else
+                        _answers[i].Text = _dict.GetCurrentValue();
+                }
                 else
-                    _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
+                {
+                    if (_choiceDir != 0)
+                        _answers[i].Text = _dict.GetTranslate(hset.ElementAt(i));
+                    else
+                        _answers[i].Text = _dict.GetValue(hset.ElementAt(i));
+                }
             }
 
             ResetAnswerLabels();
@@ -88,7 +99,15 @@ namespace Crammer
         private void ShowNextItem()
         {
             _dict.NextItem();
-            lbTestWord.Text = _dict.CurrentItem.Value;
+            _choiceDir = (DateTime.Now.Second % 2);
+            if (_choiceDir != 0)
+            {
+                lbTestWord.Text = _dict.CurrentItem.Value;
+            }
+            else
+            {
+                lbTestWord.Text = _dict.CurrentItem.Translates.ToString();
+            }
             FillAnswers();
         }
 
@@ -129,6 +148,7 @@ namespace Crammer
         private Dict _dict;
         private Label[] _answers;
         private int _pos;
+        private int _choiceDir;
 
         static readonly int MAX_ANSWERS = 9;
     }

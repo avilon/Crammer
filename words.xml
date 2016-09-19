@@ -4,6 +4,11 @@
 			<translates>
 				<translate value="книга"/>
 			</translates>
+			<tests>
+				<test name="choice" total="0" success="0" misses="0"/>
+				<test name="spelling" total="0" success="0" misses="0"/>				
+				<test name="compliance" total="0" success="0" misses="0"/>								
+			</tests>
 		</item>
 		<item caption="mismatch">
 			<translates>
@@ -31,11 +36,6 @@
 				<translate value="поток"/>
 			</translates>
 		</item>
-		<item caption="property">
-			<translates>
-				<translate value="свойство"/>
-			</translates>
-		</item>
 		<item caption="event">
 			<translates>
 				<translate value="событие"/>
@@ -44,11 +44,6 @@
 		<item caption="dust">
 			<translates>
 				<translate value="пыль"/>
-			</translates>
-		</item>
-		<item caption="sheet">
-			<translates>
-				<translate value="лист"/>
 			</translates>
 		</item>
 		<item caption="spoon">
@@ -205,6 +200,11 @@
 				<translate value="точный"/>
 			</translates>
 		</item>
+		<item caption="examine">
+			<translates>
+				<translate value="изучать"/>
+			</translates>
+		</item>
 		<item caption="above">
 			<translates>
 				<translate value="выше"/>
@@ -212,14 +212,233 @@
 		</item>
 		<item caption="explore">
 			<translates>
-				<translate value="изучать"/>
+				<translate value="исследовать"/>
 			</translates>
 		</item>
-
+		<item caption="follow">
+			<translates>
+				<translate value="следовать"/>
+			</translates>
+		</item>
+		<item caption="delivery">
+			<translates>
+				<translate value="доставка"/>
+			</translates>
+		</item>
+		<item caption="hide">
+			<translates>
+				<translate value="скрыть"/>
+			</translates>
+		</item>
+		<item caption="select">
+			<translates>
+				<translate value="выбирать"/>
+			</translates>
+		</item>
+		<item caption="align">
+			<translates>
+				<translate value="выравнивать"/>
+			</translates>
+		</item>
+		<item caption="change">
+			<translates>
+				<translate value="изменить"/>
+			</translates>
+		</item>
+		<item caption="property">
+			<translates>
+				<translate value="свойство"/>
+			</translates>
+		</item>
+		<item caption="appropriate">
+			<translates>
+				<translate value="подходящий"/>
+			</translates>
+		</item>
+		<item caption="often">
+			<translates>
+				<translate value="часто"/>
+			</translates>
+		</item>
+		<item caption="usually">
+			<translates>
+				<translate value="обычно"/>
+			</translates>
+		</item>
+		<item caption="available">
+			<translates>
+				<translate value="доступный"/>
+			</translates>
+		</item>
+		<item caption="template">
+			<translates>
+				<translate value="шаблон"/>
+			</translates>
+		</item>
+		<item caption="cover">
+			<translates>
+				<translate value="покрытие"/>
+			</translates>
+		</item>
+		<item caption="table">
+			<translates>
+				<translate value="стол"/>
+			</translates>
+		</item>
+		<item caption="chair">
+			<translates>
+				<translate value="стул"/>
+			</translates>
+		</item>
 		<item caption="request">
 			<translates>
 				<translate value="запрос"/>
 			</translates>
 		</item>
+		<item caption="folder">
+			<translates>
+				<translate value="папка"/>
+			</translates>
+		</item>
+		<item caption="sheet">
+			<translates>
+				<translate value="лист"/>
+			</translates>
+		</item>
+		<item caption="bench">
+			<translates>
+				<translate value="скамейка"/>
+			</translates>
+		</item>
+		<item caption="pillow">
+			<translates>
+				<translate value="подушка"/>
+			</translates>
+		</item>
+		<item caption="divide">
+			<translates>
+				<translate value="разделять"/>
+			</translates>
+		</item>
+		<item caption="explain">
+			<translates>
+				<translate value="объяснять"/>
+			</translates>
+		</item>
+		<item caption="repeat">
+			<translates>
+				<translate value="повторять"/>
+			</translates>
+		</item>
+		<item caption="refer">
+			<translates>
+				<translate value="ссылаться"/>
+				<translate value="обращаться"/>
+			</translates>
+		</item>
+		<item caption="expand">
+			<translates>
+				<translate value="расширять"/>
+			</translates>
+		</item>
+		<item caption="napkin">
+			<translates>
+				<translate value="салфетка"/>
+			</translates>
+		</item>
+		<item caption="plate">
+			<translates>
+				<translate value="тарелка"/>
+			</translates>
+		</item>
+		<item caption="journey">
+			<translates>
+				<translate value="путешествие"/>
+			</translates>
+		</item>
+		<item caption="reduce">
+			<translates>
+				<translate value="уменьшать"/>
+			</translates>
+		</item>
+		<item caption="restrict">
+			<translates>
+				<translate value="ограничивать"/>
+			</translates>
+		</item>
+		<item caption="slow">
+			<translates>
+				<translate value="медленно"/>
+			</translates>
+		</item>
+		
+		<item caption="kettle">
+			<translates>
+				<translate value="чайник"/>
+			</translates>
+		</item>
+
+		<item caption="previous">
+			<translates>
+				<translate value="предыдущий"/>
+			</translates>
+		</item>
+		<item caption="interact">
+			<translates>
+				<translate value="взаимодействие"/>
+			</translates>
+		</item>
+		<item caption="promt">
+			<translates>
+				<translate value="приглашение"/>
+			</translates>
+		</item>
+		<item caption="drag">
+			<translates>
+				<translate value="тянуть"/>
+			</translates>
+		</item>
+		<item caption="imply">
+			<translates>
+				<translate value="подразумевать"/>
+				<translate value="предполагать"/>
+			</translates>
+		</item>
+		<item caption="climb">
+			<translates>
+				<translate value="подниматься"/>
+			</translates>
+		</item>
+		<item caption="involve">
+			<translates>
+				<translate value="включать"/>
+			</translates>
+		</item>
+		<item caption="obvious">
+			<translates>
+				<translate value="очевидно"/>
+			</translates>
+		</item>
+		<item caption="encourage">
+			<translates>
+				<translate value="поощрять"/>
+			</translates>
+		</item>
+		<item caption="particulary">
+			<translates>
+				<translate value="особенно"/>
+			</translates>
+		</item>
+		<item caption="assume">
+			<translates>
+				<translate value="предполагать"/>
+			</translates>
+		</item>
+		<item caption="forget">
+			<translates>
+				<translate value="забывать"/>
+			</translates>
+		</item>
+		
 	</items>
 </dictionary>
