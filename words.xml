@@ -439,6 +439,136 @@
 				<translate value="забывать"/>
 			</translates>
 		</item>
+		<item caption="patience">
+			<translates>
+				<translate value="терпение"/>
+			</translates>			
+		</item>
+		<item caption="surrender">
+			<translates>
+				<translate value="сдаться"/>
+			</translates>
+		</item>
+		<item caption="perfect">
+			<translates>
+				<translate value="идеальный"/>
+			</translates>
+		</item>
+		<item caption="difficult">
+			<translates>
+				<translate value="трудный"/>
+			</translates>
+		</item>
+		<item caption="essence">
+			<translates>
+				<translate value="сущность"/>
+			</translates>
+		</item>
+		<item caption="each">
+			<translates>
+				<translate value="каждый"/>
+			</translates>
+		</item>
+		<item caption="enought">
+			<translates>
+				<translate value="достаточно"/>
+			</translates>
+		</item>
+		<item caption="nested">
+			<translates>
+				<translate value="вложенный"/>
+			</translates>
+		</item>
+		<item caption="amount">
+			<translates>
+				<translate value="сумма"/>
+			</translates>
+		</item>
+		<item caption="mention">
+			<translates>
+				<translate value="упоминание"/>
+			</translates>
+		</item>
+		<item caption="evaluate">
+			<translates>
+				<translate value="оценивать"/>
+			</translates>
+		</item>
+		<item caption="planty">
+			<translates>
+				<translate value="множество "/>
+			</translates>
+		</item>
+		<item caption="suggest">
+			<translates>
+				<translate value="предлагать"/>
+			</translates>
+		</item>
+		<item caption="foremost">
+			<translates>
+				<translate value="прежде всего"/>
+			</translates>
+		</item>
+		<item caption="delight">
+			<translates>
+				<translate value="восторг"/>
+			</translates>
+		</item>
+		<item caption="increase">
+			<translates>
+				<translate value="увеличение"/>
+			</translates>
+		</item>
+		<item caption="fortunately">
+			<translates>
+				<translate value="к счастью"/>
+			</translates>
+		</item>
+
+		<item caption="spread">
+			<translates>
+				<translate value="распространение"/>
+				<translate value="след"/>
+			</translates>
+		</item>
+		<item caption="robust">
+			<translates>
+				<translate value="прочный"/>
+				<translate value="надежный"/>
+			</translates>
+		</item>
+
+		<item caption="find out">
+			<translates>
+				<translate value="узнать"/>
+				<translate value="выяснять"/>
+			</translates>
+		</item>
+
+		<item caption="aentire">
+			<translates>
+				<translate value="полный"/>
+				<translate value="весь"/>
+			</translates>
+		</item>
+		<item caption="overwise">
+			<translates>
+				<translate value="иначе"/>
+				<translate value="в противном случае"/>
+			</translates>
+		</item>
+		<item caption="arbitrary">
+			<translates>
+				<translate value="произвольный"/>
+				<translate value="случайеый"/>
+			</translates>
+		</item>		
+		<item caption="encounter">
+			<translates>
+				<translate value="столкнуться"/>
+				<translate value="встретиться"/>
+			</translates>
+		</item>		
 		
 	</items>
 </dictionary>
