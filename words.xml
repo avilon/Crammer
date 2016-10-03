@@ -325,11 +325,6 @@
 				<translate value="объяснять"/>
 			</translates>
 		</item>
-		<item caption="repeat">
-			<translates>
-				<translate value="повторять"/>
-			</translates>
-		</item>
 		<item caption="refer">
 			<translates>
 				<translate value="ссылаться"/>
@@ -545,7 +540,7 @@
 			</translates>
 		</item>
 
-		<item caption="aentire">
+		<item caption="entire">
 			<translates>
 				<translate value="полный"/>
 				<translate value="весь"/>
@@ -560,7 +555,7 @@
 		<item caption="arbitrary">
 			<translates>
 				<translate value="произвольный"/>
-				<translate value="случайеый"/>
+				<translate value="случайный"/>
 			</translates>
 		</item>		
 		<item caption="encounter">
@@ -569,6 +564,887 @@
 				<translate value="встретиться"/>
 			</translates>
 		</item>		
-		
+		<item caption="persistent">
+			<translates>
+				<translate value="устойчивый"/>
+				<translate value="стабильный"/>
+			</translates>
+		</item>		
+
+		<item caption="careful">
+			<translates>
+				<translate value="осторожный"/>
+			</translates>
+		</item>
+		<item caption="glass">
+			<translates>
+				<translate value="стекло"/>
+			</translates>
+		</item>
+		<item caption="rubber">
+			<translates>
+				<translate value="резина"/>
+			</translates>
+		</item>
+		<item caption="save">
+			<translates>
+				<translate value="сохранять"/>
+			</translates>
+		</item>
+		<item caption="remember">
+			<translates>
+				<translate value="помнить"/>
+			</translates>
+		</item>
+		<item caption="finger">
+			<translates>
+				<translate value="палец"/>
+			</translates>
+		</item>
+		<item caption="cheat">
+			<translates>
+				<translate value="обманывать"/>
+			</translates>
+		</item>
+		<item caption="predator">
+			<translates>
+				<translate value="хищник"/>
+			</translates>
+		</item>
+		<item caption="hunter">
+			<translates>
+				<translate value="охотник"/>
+			</translates>
+		</item>
+		<item caption="snake">
+			<translates>
+				<translate value="змея"/>
+			</translates>
+		</item>
+		<item caption="dog">
+			<translates>
+				<translate value="собака"/>
+			</translates>
+		</item>
+		<item caption="rabbit">
+			<translates>
+				<translate value="кролик"/>
+			</translates>
+		</item>
+		<item caption="wolf">
+			<translates>
+				<translate value="волк"/>
+			</translates>
+		</item>
+		<item caption="fox">
+			<translates>
+				<translate value="лиса"/>
+			</translates>
+		</item>
+		<item caption="bear">
+			<translates>
+				<translate value="медведь"/>
+			</translates>
+		</item>
+		<item caption="cock">
+			<translates>
+				<translate value="петух"/>
+			</translates>
+		</item>
+		<item caption="donkey">
+			<translates>
+				<translate value="осел"/>
+			</translates>
+		</item>
+		<item caption="monkey">
+			<translates>
+				<translate value="обезьяна"/>
+			</translates>
+		</item>
+		<item caption="horse">
+			<translates>
+				<translate value="лошадь"/>
+			</translates>
+		</item>
+		<item caption="bird">
+			<translates>
+				<translate value="птица"/>
+			</translates>
+		</item>
+		<item caption="fly">
+			<translates>
+				<translate value="летать"/>
+			</translates>
+		</item>
+		<item caption="fall">
+			<translates>
+				<translate value="падать"/>
+			</translates>
+		</item>
+		<item caption="swim">
+			<translates>
+				<translate value="плавать"/>
+			</translates>
+		</item>
+
+		<item caption="iron">
+			<translates>
+				<translate value="железо"/>
+			</translates>
+		</item>
+		<item caption="wood">
+			<translates>
+				<translate value="дерево"/>
+			</translates>
+		</item>
+		<item caption="stone">
+			<translates>
+				<translate value="камень"/>
+			</translates>
+		</item>
+		<item caption="paper">
+			<translates>
+				<translate value="бумага"/>
+			</translates>
+		</item>
+		<item caption="lock">
+			<translates>
+				<translate value="замок"/>
+			</translates>
+		</item>
+		<item caption="key">
+			<translates>
+				<translate value="ключ"/>
+			</translates>
+		</item>
+		<item caption="mountain">
+			<translates>
+				<translate value="гора"/>
+			</translates>
+		</item>
+		<item caption="river">
+			<translates>
+				<translate value="река"/>
+			</translates>
+		</item>
+		<item caption="field">
+			<translates>
+				<translate value="поле"/>
+			</translates>
+		</item>
+		<item caption="forest">
+			<translates>
+				<translate value="лес"/>
+			</translates>
+		</item>
+		<item caption="cave">
+			<translates>
+				<translate value="пещера"/>
+			</translates>
+		</item>
+		<item caption="rock">
+			<translates>
+				<translate value="скала"/>
+			</translates>
+		</item>
+		<item caption="sky">
+			<translates>
+				<translate value="небо"/>
+			</translates>
+		</item>
+		<item caption="cloud">
+			<translates>
+				<translate value="облако"/>
+			</translates>
+		</item>
+		<item caption="rain">
+			<translates>
+				<translate value="дождь"/>
+			</translates>
+		</item>
+		<item caption="snow">
+			<translates>
+				<translate value="снег"/>
+			</translates>
+		</item>
+		<item caption="ice">
+			<translates>
+				<translate value="лед"/>
+			</translates>
+		</item>
+		<item caption="wind">
+			<translates>
+				<translate value="ветер"/>
+			</translates>
+		</item>
+		<item caption="fog">
+			<translates>
+				<translate value="туман"/>
+			</translates>
+		</item>
+		<item caption="grass">
+			<translates>
+				<translate value="трава"/>
+			</translates>
+		</item>
+		<item caption="be sure to read">
+			<translates>
+				<translate value="обязательно прочитайте"/>
+			</translates>
+		</item>
+		<item caption="mandatory">
+			<translates>
+				<translate value="необходимый"/>
+			</translates>
+		</item>
+		<item caption="benefit">
+			<translates>
+				<translate value="выгода"/>
+			</translates>
+		</item>
+		<item caption="plaid">
+			<translates>
+				<translate value="плед"/>
+			</translates>
+		</item>
+		<item caption="blanket">
+			<translates>
+				<translate value="одеяло"/>
+			</translates>
+		</item>
+		<item caption="bath">
+			<translates>
+				<translate value="ванная"/>
+			</translates>
+		</item>
+		<item caption="kitchen">
+			<translates>
+				<translate value="кухня"/>
+			</translates>
+		</item>
+		<item caption="law">
+			<translates>
+				<translate value="закон"/>
+			</translates>
+		</item>
+		<item caption="agreement">
+			<translates>
+				<translate value="договор"/>
+			</translates>
+		</item>
+		<item caption="so it needs">
+			<translates>
+				<translate value="поэтому он должен"/>
+			</translates>
+		</item>
+		<item caption="obtain">
+			<translates>
+				<translate value="получать"/>
+			</translates>
+		</item>
+		<item caption="aware">
+			<translates>
+				<translate value="знающий"/>
+			</translates>
+		</item>
+		<item caption="apple">
+			<translates>
+				<translate value="яблоко"/>
+			</translates>
+		</item>
+		<item caption="peach">
+			<translates>
+				<translate value="персик"/>
+			</translates>
+		</item>
+		<item caption="cherry">
+			<translates>
+				<translate value="вишня"/>
+			</translates>
+		</item>
+		<item caption="plum">
+			<translates>
+				<translate value="слива"/>
+			</translates>
+		</item>
+		<item caption="pear">
+			<translates>
+				<translate value="груша"/>
+			</translates>
+		</item>
+		<item caption="grape">
+			<translates>
+				<translate value="виноград"/>
+			</translates>
+		</item>
+		<item caption="apricot">
+			<translates>
+				<translate value="абрикос"/>
+			</translates>
+		</item>
+		<item caption="corn">
+			<translates>
+				<translate value="кукуруза"/>
+			</translates>
+		</item>
+		<item caption="oil">
+			<translates>
+				<translate value="масло"/>
+			</translates>
+		</item>
+		<item caption="jam">
+			<translates>
+				<translate value="повидло"/>
+			</translates>
+		</item>
+		<item caption="cabbage">
+			<translates>
+				<translate value="капуста"/>
+			</translates>
+		</item>
+		<item caption="redish">
+			<translates>
+				<translate value="редиска"/>
+			</translates>
+		</item>
+		<item caption="sheep">
+			<translates>
+				<translate value="овца"/>
+			</translates>
+		</item>
+		<item caption="chicken">
+			<translates>
+				<translate value="цыпленок"/>
+			</translates>
+		</item>
+		<item caption="snippet">
+			<translates>
+				<translate value="фрагмент"/>
+			</translates>
+		</item>
+		<item caption="flame">
+			<translates>
+				<translate value="пламя"/>
+			</translates>
+		</item>
+		<item caption="dream">
+			<translates>
+				<translate value="мечта"/>
+			</translates>
+		</item>
+		<item caption="cry">
+			<translates>
+				<translate value="плакть"/>
+			</translates>
+		</item>
+		<item caption="break">
+			<translates>
+				<translate value="ломать"/>
+			</translates>
+		</item>
+		<item caption="again">
+			<translates>
+				<translate value="снова"/>
+			</translates>
+		</item>
+		<item caption="catch">
+			<translates>
+				<translate value="ловить"/>
+			</translates>
+		</item>
+		<item caption="letter">
+			<translates>
+				<translate value="письмо"/>
+			</translates>
+		</item>
+		<item caption="disguise">
+			<translates>
+				<translate value="маска"/>
+			</translates>
+		</item>
+		<item caption="believe">
+			<translates>
+				<translate value="верить"/>
+			</translates>
+		</item>
+		<item caption="belong">
+			<translates>
+				<translate value="принадлежать"/>
+			</translates>
+		</item>
+		<item caption="artist">
+			<translates>
+				<translate value="художник"/>
+				<translate value="живописец"/>
+			</translates>
+		</item>
+		<item caption="banker">
+			<translates>
+				<translate value="банкир"/>
+			</translates>
+		</item>
+		<item caption="chemist">
+			<translates>
+				<translate value="аптекарь"/>
+				<translate value="фармацевт"/>				
+			</translates>
+		</item>
+		<item caption="dentist">
+			<translates>
+				<translate value="стоматолог"/>
+			</translates>
+		</item>
+		<item caption="engineer">
+			<translates>
+				<translate value="инженер"/>
+			</translates>
+		</item>
+		<item caption="fireman">
+			<translates>
+				<translate value="пожарный"/>
+			</translates>
+		</item>
+		<item caption="lawer">
+			<translates>
+				<translate value="юрист"/>
+				<translate value="адвокат"/>				
+			</translates>
+		</item>
+		<item caption="policeman">
+			<translates>
+				<translate value="полицейский"/>
+			</translates>
+		</item>
+		<item caption="programmer">
+			<translates>
+				<translate value="программист"/>
+			</translates>
+		</item>
+		<item caption="scientist">
+			<translates>
+				<translate value="ученый"/>
+				<translate value="научный работник"/>				
+			</translates>
+		</item>
+		<item caption="shop assistant">
+			<translates>
+				<translate value="продавец"/>
+			</translates>
+		</item>
+		<item caption="vet">
+			<translates>
+				<translate value="ветеринарный врач"/>
+			</translates>
+		</item>
+		<item caption="teacher">
+			<translates>
+				<translate value="учитель"/>
+			</translates>
+		</item>
+		<item caption="nurse">
+			<translates>
+				<translate value="медсестра"/>
+			</translates>
+		</item>
+		<item caption="bodyguard">
+			<translates>
+				<translate value="телохранитель"/>
+			</translates>
+		</item>
+		<item caption="therefore">
+			<translates>
+				<translate value="поэтому"/>
+			</translates>
+		</item>
+		<item caption="switch">
+			<translates>
+				<translate value="переключаться"/>
+			</translates>
+		</item>
+		<item caption="mix">
+			<translates>
+				<translate value="смешивать"/>
+			</translates>
+		</item>
+		<item caption="distribute">
+			<translates>
+				<translate value="распределять"/>
+			</translates>
+		</item>
+		<item caption="find">
+			<translates>
+				<translate value="находить"/>
+			</translates>
+		</item>
+		<item caption="include">
+			<translates>
+				<translate value="включать"/>
+			</translates>
+		</item>
+		<item caption="interview">
+			<translates>
+				<translate value="собеседование"/>
+			</translates>
+		</item>
+		<item caption="smoke">
+			<translates>
+				<translate value="курить"/>
+			</translates>
+		</item>
+		<item caption="buy">
+			<translates>
+				<translate value="покупать"/>
+			</translates>
+		</item>
+		<item caption="pay">
+			<translates>
+				<translate value="платить"/>
+			</translates>
+		</item>
+		<item caption="boil">
+			<translates>
+				<translate value="кипятить"/>
+			</translates>
+		</item>
+		<item caption="freeze">
+			<translates>
+				<translate value="замораживать"/>
+			</translates>
+		</item>
+
+		<item caption="gain">
+			<translates>
+				<translate value="усиление"/>
+				<translate value="прирост"/>				
+			</translates>			
+		</item>
+		<item caption="tomorrow">
+			<translates>
+				<translate value="завтра"/>
+			</translates>
+		</item>
+		<item caption="yesterday">
+			<translates>
+				<translate value="вчера"/>
+			</translates>
+		</item>
+		<item caption="cast">
+			<translates>
+				<translate value="бросать"/>
+			</translates>
+		</item>
+		<item caption="pot">
+			<translates>
+				<translate value="банка"/>
+				<translate value="горшок"/>				
+			</translates>
+		</item>
+		<item caption="away">
+			<translates>
+				<translate value="просыпаться"/>
+			</translates>
+		</item>		
+		<item caption="child">
+			<translates>
+				<translate value="ребенок"/>
+			</translates>
+		</item>
+		<item caption="darkness">
+			<translates>
+				<translate value="темнота"/>
+			</translates>
+		</item>
+		<item caption="picture">
+			<translates>
+				<translate value="картина"/>
+			</translates>
+		</item>
+		<item caption="carefully">
+			<translates>
+				<translate value="тщательно"/>
+			</translates>
+		</item>
+		<item caption="revise">
+			<translates>
+				<translate value="проверять"/>
+			</translates>
+		</item>
+		<item caption="orange">
+			<translates>
+				<translate value="апельсин"/>
+			</translates>
+		</item>
+		<item caption="juice">
+			<translates>
+				<translate value="сок"/>
+			</translates>
+		</item>
+		<item caption="bread">
+			<translates>
+				<translate value="хлеб"/>
+			</translates>
+		</item>
+		<item caption="today">
+			<translates>
+				<translate value="сегодня"/>
+			</translates>
+		</item>
+		<item caption="week">
+			<translates>
+				<translate value="неделя"/>
+			</translates>
+		</item>
+		<item caption="month">
+			<translates>
+				<translate value="месяц"/>
+			</translates>
+		</item>
+		<item caption="year">
+			<translates>
+				<translate value="год"/>
+			</translates>
+		</item>
+		<item caption="moon">
+			<translates>
+				<translate value="полдень"/>
+			</translates>
+		</item>
+		<item caption="modnight">
+			<translates>
+				<translate value="полночь"/>
+			</translates>
+		</item>
+		<item caption="morning">
+			<translates>
+				<translate value="утро"/>
+			</translates>
+		</item>
+		<item caption="day">
+			<translates>
+				<translate value="день"/>
+			</translates>
+		</item>
+		<item caption="evening">
+			<translates>
+				<translate value="вечер"/>
+			</translates>
+		</item>
+		<item caption="night">
+			<translates>
+				<translate value="ночь"/>
+			</translates>
+		</item>		
+		<item caption="calm">
+			<translates>
+				<translate value="спокойный"/>
+			</translates>
+		</item>		
+		<item caption="play">
+			<translates>
+				<translate value="играть"/>
+			</translates>
+		</item>		
+		<item caption="win(won)">
+			<translates>
+				<translate value="побеждать"/>
+				<translate value="выигрывать"/>				
+			</translates>			
+		</item>		
+		<item caption="lose(lost)">
+			<translates>
+				<translate value="проигрывать"/>
+			</translates>
+		</item>		
+		<item caption="rehearse">
+			<translates>
+				<translate value="репетиция"/>
+			</translates>
+		</item>		
+		<item caption="repeat">
+			<translates>
+				<translate value="повторять"/>
+			</translates>
+		</item>		
+		<item caption="opinion">
+			<translates>
+				<translate value="мнение"/>
+			</translates>
+		</item>		
+		<item caption="grateful">
+			<translates>
+				<translate value="благодарный"/>
+			</translates>
+		</item>		
+		<item caption="happen">
+			<translates>
+				<translate value="случаться"/>
+				<translate value="происходить"/>				
+			</translates>
+		</item>		
+		<item caption="environment">
+			<translates>
+				<translate value="окружение"/>
+				<translate value="окружающая среда"/>				
+			</translates>			
+		</item>		
+		<item caption="skin">
+			<translates>
+				<translate value="кожа"/>
+				<translate value="оболочка"/>				
+			</translates>			
+		</item>		
+		<item caption="respect">
+			<translates>
+				<translate value="уважение"/>
+			</translates>
+		</item>		
+		<item caption="quality">
+			<translates>
+				<translate value="качество"/>
+			</translates>
+		</item>		
+		<item caption="support">
+			<translates>
+				<translate value="поддержка"/>
+			</translates>
+		</item>		
+		<item caption="coast">
+			<translates>
+				<translate value="берег"/>
+				<translate value="побережье"/>				
+			</translates>			
+		</item>		
+		<item caption="line">
+			<translates>
+				<translate value="линия"/>
+				<translate value="строка"/>				
+			</translates>			
+		</item>		
+		<item caption="hill">
+			<translates>
+				<translate value="холм"/>
+				<translate value="возвышенность"/>				
+			</translates>			
+		</item>		
+		<item caption="study">
+			<translates>
+				<translate value="исследование"/>
+				<translate value="обучение"/>				
+			</translates>			
+		</item>		
+		<item caption="fashion">
+			<translates>
+				<translate value="мода"/>
+				<translate value="одежда"/>				
+			</translates>			
+		</item>		
+		<item caption="bullshit">
+			<translates>
+				<translate value="отстой"/>
+			</translates>			
+		</item>		
+		<item caption="handsome">
+			<translates>
+				<translate value="симпатичный"/>
+				<translate value="привлекательный"/>				
+			</translates>			
+		</item>		
+		<item caption="stuffy">
+			<translates>
+				<translate value="душно"/>
+			</translates>
+		</item>		
+		<item caption="perhaps">
+			<translates>
+				<translate value="возможно"/>
+			</translates>
+		</item>		
+		<item caption="thief">
+			<translates>
+				<translate value="вор"/>
+			</translates>
+		</item>		
+		<item caption="steal">
+			<translates>
+				<translate value="воровать"/>
+			</translates>
+		</item>		
+		<item caption="harry">
+			<translates>
+				<translate value="разорять"/>
+			</translates>
+		</item>		
+		<item caption="damage">
+			<translates>
+				<translate value="ущерб"/>
+			</translates>
+		</item>		
+		<item caption="begin">
+			<translates>
+				<translate value="начинать"/>
+			</translates>
+		</item>		
+		<item caption="late">
+			<translates>
+				<translate value="поздний"/>
+			</translates>
+		</item>		
+		<item caption="bind">
+			<translates>
+				<translate value="связывать"/>
+			</translates>
+		</item>		
+		<item caption="rest">
+			<translates>
+				<translate value="остаток"/>
+			</translates>
+		</item>		
+		<item caption="glance">
+			<translates>
+				<translate value="быстрый взгляд"/>
+			</translates>
+		</item>		
+		<item caption="drug">
+			<translates>
+				<translate value="лекарство"/>
+			</translates>
+		</item>		
+		<item caption="way">
+			<translates>
+				<translate value="дорога"/>
+				<translate value="направление"/>				
+			</translates>
+		</item>		
+		<item caption="dry">
+			<translates>
+				<translate value="сухой"/>
+			</translates>
+		</item>		
+		<item caption="discount">
+			<translates>
+				<translate value="скидка"/>
+			</translates>
+		</item>		
+		<item caption="ill">
+			<translates>
+				<translate value="болеть"/>
+			</translates>
+		</item>		
+		<item caption="try">
+			<translates>
+				<translate value="пытаться"/>
+			</translates>
+		</item>		
+		<item caption="walk">
+			<translates>
+				<translate value="идти"/>
+				<translate value="гулять"/>				
+			</translates>
+		</item>		
+		<item caption="place">
+			<translates>
+				<translate value="место"/>
+			</translates>
+		</item>		
 	</items>
 </dictionary>
